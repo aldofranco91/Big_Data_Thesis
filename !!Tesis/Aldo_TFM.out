@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Data Availability}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Software tools}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{ESIOS}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{API}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Methodology}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Support Vector Machines for Regression}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Time Series Linear Models}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{TBATS Models}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{Simple Linear Regression}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.5}{Dynamic Factor Models}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.6}{Forecasting Accuracy Measure}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.7}{Model selection criteria based on prediction performance}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.8}{Prediction Intervals}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{Forecasting exercises}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Forecasting 24 hours}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.2}{Forecasting 144 hours}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.3}{Forecasting 30 days}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.4}{Forecasting 12 months}{section.4}% 19
+\BOOKMARK [1][-]{section.5}{Automatization and Visualization}{}% 20
+\BOOKMARK [1][-]{section.6}{Conclusions and future research lines}{}% 21
+\BOOKMARK [1][-]{section.7}{Acknowledgments}{}% 22
+\BOOKMARK [1][-]{section.8}{Appendix: Thesis Work Schedule}{}% 23

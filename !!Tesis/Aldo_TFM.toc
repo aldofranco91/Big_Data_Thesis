@@ -1,0 +1,24 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}
+\contentsline {section}{\numberline {2}Data Availability}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}Software tools}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}ESIOS}{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}API}{11}{subsection.2.3}
+\contentsline {section}{\numberline {3}Methodology}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Support Vector Machines for Regression}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Time Series Linear Models}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}TBATS Models}{17}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Simple Linear Regression}{19}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Dynamic Factor Models}{19}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Forecasting Accuracy Measure}{20}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Model selection criteria based on prediction performance}{21}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Prediction Intervals}{22}{subsection.3.8}
+\contentsline {section}{\numberline {4}Forecasting exercises}{24}{section.4}
+\contentsline {subsection}{\numberline {4.1}Forecasting 24 hours}{24}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Forecasting 144 hours}{30}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Forecasting 30 days}{33}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Forecasting 12 months}{36}{subsection.4.4}
+\contentsline {section}{\numberline {5}Automatization and Visualization}{39}{section.5}
+\contentsline {section}{\numberline {6}Conclusions and future research lines}{41}{section.6}
+\contentsline {section}{\numberline {7}Acknowledgments}{42}{section.7}
+\contentsline {section}{\numberline {8}Appendix: Thesis Work Schedule}{43}{section.8}

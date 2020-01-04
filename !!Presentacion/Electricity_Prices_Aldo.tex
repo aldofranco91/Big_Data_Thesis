@@ -1,0 +1,496 @@
+\documentclass[10pt]{beamer}
+\usetheme{Boadilla}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{sansmathaccent}
+\pdfmapfile{+sansmathaccent.map}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\DeclareGraphicsExtensions{,.pdf,.png,.jpg,.gif}
+\usepackage{graphicx}
+\setbeamercovered{transparent} 
+
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+%\institute{} 
+%\date{} 
+%\subject{} 
+
+\title[Forecasting Spanish electricity prices] %optional
+{\huge {Forecasting Spanish electricity prices}}
+ 
+\author[Universidad Carlos III de Madrid] % (optional, for multiple authors)
+{\Large {Aldo Franco Comas}}
+
+\institute[UC3M] 
+
+\titlegraphic{\includegraphics[width=1.5cm]{imagenes/logo_uc3m.jpg}}
+ 
+\date[March, 2018] % (optional)
+{Master in Big Data Analytics\\
+2017-2018.}
+ 
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Motivation and importance.}
+\begin{block}{What did we do?}
+\begin{itemize}
+\item Forecast to short, medium and long term the electricity prices in Spain.
+\item Using SVM, ARIMA models, TBATS and dynamic factor models.
+\item Create an App where can be visualized and downloaded these predictions.
+\end{itemize}
+\end{block}
+
+\begin{block}{Why did we do it?}
+\begin{itemize}
+\item It is very useful for portfolio managers, producers and utilities companies.
+\item Forecasting in real time.
+\item No user intervention.
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}{Law of supply and demand.}
+\begin{figure}[H] 
+\centering
+\includegraphics[scale=0.2]{imagenes/SD.jpg}
+\caption{The Law of Supply and Demand.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Similar researches.}
+\only<1-3>{
+\begin{block}{Short term.}
+\begin{itemize}
+\item ARMA models in the German EEX market.
+\item AR models in the California market.
+\item ARMAX models in the PJM market.
+\end{itemize}
+\end{block}
+}
+
+\only<2-3>{
+\begin{block}{Medium term.}
+\begin{itemize}
+\item VAR models in the Iberian market.
+\item Forward price models in the Nordic markets.
+\end{itemize}
+\end{block}
+}
+
+\only<3>{
+\begin{block}{Long term.}
+\begin{itemize}
+\item ANN in the Spanish market.
+\end{itemize}
+\end{block}
+}
+
+\end{frame}
+
+\begin{frame}{Software tools}
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.3]{imagenes/R.png}
+\end{figure}
+\end{column}
+
+\begin{column}{.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.1]{imagenes/AWS.png}
+\end{figure}
+\end{column}
+\end{columns}
+
+\begin{block}{R's packages}
+\begin{itemize}
+\item jsnolite
+\item httr
+\item lubridate
+\item MLmetrics
+\item forecast
+\item caret
+\item shiny
+\item cronR
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}{How can we download the data?}
+
+REE has developed an information system known as 
+\href{https://www.esios.ree.es/es}{E-SIOS}. Where we can access to non confidential information through the ESIOS-API.
+
+\begin{table}[H]
+\centering
+\caption{Variables downloaded from E-SIOS website.}
+\label{my-label}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Variable                          & Id  & By Month & By Day & By Hour \\ \hline
+Price                             & 600 & Yes      & Yes    & Yes     \\ \hline
+Demand Forecast                   & 460 & No       & No     & Yes     \\ \hline
+Wind Power Generation Forecast    & 541 & No       & No     & Yes     \\ \hline
+Solar PV Generation Forecast      & 542 & No       & No     & Yes     \\ \hline
+Solar Thermal Generation Forecast & 543 & No       & No     & Yes     \\ \hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Methodology in order to select the best models.}
+\begin{figure}[H] 
+\centering
+\includegraphics[scale=0.4]{imagenes/TrainTest.jpg}
+\caption{Illustration of the rolling forecasting origin procedure.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Methodology in order to select the best models.}
+\begin{block}{Forecasting Accuracy Measure}
+\begin{itemize}
+\item $MAPE=\frac{100}{n}\sum_{t=1}^{n}\left | \frac{y_t-\widehat{y_t}}{y_t} \right |$
+\item $MAE=\frac{1}{n}\sum_{t=1}^{n}\left | y_t-\widehat{y_t} \right | $
+\item $MDAE=median(\left | y_t-\widehat{y_t} \right |)$
+\end{itemize}
+\end{block}
+where $y_t$ is the real price and $\widehat{y_t}$ is the corresponding forecast
+
+\end{frame}
+
+
+\begin{frame}{Forecasting 24 hours.}
+\only<1>{
+\begin{block}{Regression Formula}
+\begin{align*}
+Price \sim & Daily Peninsular Demand Forecast  \\
+           & + Peninsular Wind Power Generation Forecast  \\
+           & + Solar PV Generation Forecast  \\
+           & + Solar Thermal Forecast.
+\end{align*}
+\end{block}
+
+\begin{block}{Period under study.}
+From January 1st, 2016 to June 30th, 2017
+\end{block}
+}
+
+\only<2>{
+\begin{block}{Algorithms for forecast 24 hours}
+\begin{multicols}{2}
+\begin{itemize}
+\item SVM with linear kernel.
+\item SVM with polynomial kernel.
+\item SVM with radial kernel.
+\item KNN.
+\item Gaussian Process with polynomial kernel.
+\item Gaussian Process with radial kernel.
+\item Dynamic Factor Model.
+\end{itemize}
+\end{multicols}
+\end{block}
+
+\begin{block}{Number of days for train.}
+\begin{itemize}
+\item 7, 14, 21, 42, 84 days.
+\item 100, 200, 300, 400 and 500 days for DFM.
+\end{itemize}
+\end{block}
+}
+
+\only<3>{
+\begin{block}{Hyperparameter tuning}
+\begin{itemize}
+\item SVM with linear kernel $\Rightarrow$ C.
+\item SVM with polynomial kernel $\Rightarrow$ degree, scale, C.
+\item SVM with radial kernel $\Rightarrow$  sigma, C.
+\item Gaussian Process with polynomial kernel $\Rightarrow$ degree, scale.
+\item Gaussian Process with radial kernel $\Rightarrow$ sigma .
+\item KNN $\Rightarrow$ kmax, distance, kernel. 
+\end{itemize}
+\end{block}
+}
+
+\only<4>{
+\begin{block}{Algorithms for forecast 24 hours}
+\begin{multicols}{2}
+\begin{itemize}
+\item {\color{red}SVM with linear kernel.}
+\item SVM with polynomial kernel.
+\item SVM with radial kernel.
+\item KNN.
+\item Gaussian Process with polynomial kernel.
+\item Gaussian Process with radial kernel.
+\item Dynamic Factor Model.
+\end{itemize}
+\end{multicols}
+\end{block}
+
+\begin{block}{Number of days for train.}
+\begin{itemize}
+\item {\color{red}7}, 14, 21, 42, 84 days.
+\item 100, 200, 300, 400 and 500 days for DFM.
+\end{itemize}
+\end{block}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|l|l|l|}
+\hline
+Measure & Min  & Q1   & Median & Mean & Q3   & Max   \\ \hline
+MAE     & 0.57 & 2.13 & 2.94   & 3.39 & 3.96 & 18.26 \\ \hline
+\end{tabular}
+\end{table}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/SVM_Good.eps}
+\caption{Real and predicted prices when a low MAE is obtained using SVM with linear kernel for the next 24 hours.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/MAE_24.png}
+\caption{Daily MAE for 1-24 Hours from January 1st, 2016 to June 30th, 2017.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Forecasting 144 hours.}
+\only<1>{
+\begin{block}{Formula regression}
+\begin{align*}
+Price \sim & Daily Peninsular Demand Forecast 
+\end{align*}
+\end{block}
+
+\begin{block}{Period under study.}
+From January 1st, 2016 to June 30th, 2017
+\end{block}
+}
+
+\only<2>{
+\begin{block}{Algorithms for forecast 144 hours}
+\begin{itemize}
+\item Dynamic Factor Model with 2 factors.
+\item Dynamic Factor Model with 3 factors.
+\item DFM with 2 factors + Linear Regression.
+\item DFM with 3 factors + Linear Regression. \end{itemize}
+\end{block}
+\begin{block}{Number of days for train.}
+\begin{itemize}
+\item 100, 200, 300, 400 and 500 days.
+\end{itemize}
+\end{block}
+}
+
+\only<3>{
+\begin{block}{Algorithms for forecast 144 hours}
+\begin{itemize}
+\item SVM with linear kernel.
+\item Dynamic Factor Model with 2 factors.
+\item Dynamic Factor Model with 3 factors.
+\item DFM with 2 factors + Linear Regression.
+\item {\color{red}DFM with 3 factors + Linear Regression. }
+\end{itemize}
+\end{block}
+
+\begin{block}{Number of days for train.}
+\begin{itemize}
+\item 100, 200, 300, 400 and {\color{red}500} days.
+\end{itemize}
+\end{block}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|l|l|l|}
+\hline
+Measure & Min  & Q1   & Median & Mean & Q3   & Max   \\ \hline
+MAE     & 1.98 & 3.63 & 4.92 & 5.72 & 6.65 & 20.59 \\ \hline
+\end{tabular}
+\end{table}
+
+}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/144_Good.eps}
+\caption{Real and predicted prices when a low MAE is obtained using LR+DFM with r=3 for the next 144 hours.}
+\label{Good_144}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/MAE_144.png}
+\caption{Daily MAE for 1-144 Hours from January 1st, 2016 to June 30th, 2017.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Forecasting 30 days.}
+\only<1>{
+\begin{block}{Algorithms for forecast 30 days}
+\begin{itemize}
+\item $ARIMA (p,1,q)(P,1,Q)_7$
+\item $TBATS_7$
+\end{itemize}
+\end{block}
+\begin{block}{Number of days for train.}
+\begin{itemize}
+\item 100, 20, 300, 400 and 500 days.
+\end{itemize}
+\end{block}
+}
+
+\only<2>{
+\begin{block}{Algorithms for forecast 30 days}
+\begin{itemize}
+\item $ARIMA (p,1,q)(P,1,Q)_7$
+\item {\color{red}$TBATS_7$}
+\end{itemize}
+\end{block}
+\begin{block}{Number of days for train.}
+\begin{itemize}
+\item 100, 20, 300, 400 and {\color{red}500} days.
+\end{itemize}
+\end{block}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|l|l|l|}
+\hline
+Measure & Min  & Q1   & Median & Mean & Q3   & Max   \\ \hline
+MAE     & 2.18 & 4.14 & 5.39 & 6.75 & 8.41 & 25.33 \\ \hline
+\end{tabular}
+\end{table}
+}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/Good_1_30.eps}
+\caption{Real and predicted prices when a low MAE is obtained using $TBATS_7$ for the next 30 days.}
+\label{Good_30}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/MAE_30.png}
+\caption{Daily MAE for 1-30 Days from January 1st, 2016 to June 30th, 2017.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Forecasting 12 months.}
+\only<1>{
+\begin{block}{Algorithms for forecast 12 months}
+\begin{itemize}
+\item $ARIMA (p,1,q)(P,1,Q)_{12}$
+\item $ARIMA (p,1,q)(P,1,Q)_{12}$ with automatic BoxCox transformation.
+\end{itemize}
+\end{block}
+
+\begin{block}{Number of days for train.}
+\begin{itemize}
+\item 60, 80, 100, 120 and 140 months.
+\end{itemize}
+\end{block}
+}
+
+\only<2>{
+\begin{block}{Algorithms for forecast 12 months}
+\begin{itemize}
+\item $ARIMA (p,1,q)(P,1,Q)_{12}$
+\item {\color{red}$ARIMA (p,1,q)(P,1,Q)_{12}$ with automatic BoxCox transformation.}
+\end{itemize}
+
+\end{block}
+
+\begin{block}{Number of days for train.}
+\begin{itemize}
+\item 60, 80, 100, 120 and {\color{red}140} months.
+\end{itemize}
+\end{block}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|l|l|l|}
+\hline
+Measure & Min  & Q1   & Median & Mean & Q3   & Max   \\ \hline
+MAE     & 2.53 & 5.36 & 8.23 & 9.22 & 10.90 & 30.00 \\ \hline
+\end{tabular}
+\end{table}
+
+
+}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/Good_12.eps}
+\caption{Real and predicted prices when a low MAE is obtained using $ARIMA$ for the next 12 months.}
+\label{Good_12}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagenes/MAE_12.png}
+\caption{Monthly MAE for 1-12 Months from January, 2010 to June, 2017.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Automatization and Visualization}
+\begin{block}{AWS and cron}
+\begin{itemize}
+\item AWS instance with RStudio and Julia server.
+\item cronR package.
+\end{itemize}
+\end{block}
+
+
+\begin{alertblock}{Appication}
+\href{http://35.157.17.182/shiny/rstudio/sample-apps/Forecast/}{\beamergotobutton{App}}
+\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+{\Huge THE END!!!!}
+\end{center}
+\end{frame}
+
+\end{document}
+
+
+
+
+
+
+

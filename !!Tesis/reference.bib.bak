@@ -1,0 +1,518 @@
+@article{review,
+author = {Weron, Rafał},
+title = {Electricity price forecasting: A review of the state-of-the-art with a look into the future},
+journal = {International Journal of Forecasting},
+year = {2014},
+volume = {30},
+pages = {1030-1081}
+}
+
+@book{OTexts,
+  title={Forecasting: principles and practice: },
+  author={Hyndman, R.J. and Athanasopoulos, G.},
+  year={2014},
+  publisher={OTexts}
+}
+
+@book{Granger,
+  title={Forecasting in Business and Economics},
+  author={W. J. Granger, Clive},
+  series={Economic Theory, Econometrics and Mathematical Economics Series},
+  year={1989},
+  publisher={Academic Press}
+}
+
+
+@article{Andres,
+ author = {Alonso, Andrés Modesto and Rodríguez, Julio and García-Martos, Carolina and  Sánchez, María Jesús},
+ journal = {Technometrics},
+ number = {2},
+ pages = {137-151},
+ publisher = {Taylor & Francis, Ltd.},
+ title = {Seasonal Dynamic Factor Analysis and Bootstrap Inference: Application to Electricity Market Forecasting},
+ volume = {53},
+ year = {2011}
+}
+
+@BOOK{Vapnik,
+ author = {Vapnik, Vladimir N.},
+ title = {The Nature of Statistical Learning Theory},
+ year = {1995},
+ publisher = {Springer-Verlag New York, Inc.}
+} 
+
+@ARTICLE{Error,
+    author = {Hyndman, Rob J. and Koehler, Anne B.},
+    title = {Another look at measures of forecast accuracy},
+    journal = {International Journal of Forecasting},
+    year = {2006},
+    pages = {679-688},
+    number = {4},
+  	volume = {22}
+}
+
+@book{A,
+  title={The Dynamic Factor Analysis of Economic Time Series Models},
+  author={Geweke, J.},
+  year={1978},
+  publisher={Social Systems Research Institute, University of Wisconsin-Madison}
+}
+
+@TECHREPORT{B,
+title = {Programs TRAMO and SEATS, Instruction for User (Beta Version: september 1996)},
+author = {Gómez, Victor and Maravall, Agustin},
+year = {1996},
+institution = {Banco de España},
+type = {Working Papers}
+}
+
+@book{C,
+  title={Forecasting, structural time series models and the Kalman filter},
+  author={Harvey, Andrew C.},
+  year={1990},
+  publisher={Cambridge University Press}
+}
+
+@article{D,
+ author = {Lee, Ronald D. and Carter, Lawrence R.},
+ journal = {Journal of the American Statistical Association},
+ number = {419},
+ pages = {659-671},
+ publisher = {[American Statistical Association, Taylor & Francis, Ltd.]},
+ title = {Modeling and Forecasting U. S. Mortality},
+ volume = {87},
+ year = {1992}
+}
+
+@article{E,
+  title={Identifying a simplifying structure in time series},
+  author={Pena, Daniel and Box, George EP},
+  journal={Journal of the American Statistical Association},
+  volume={82},
+  number={399},
+  pages={836-843},
+  year={1987},
+  publisher={Taylor \& Francis Group}
+}
+
+@article{F,
+  title={Forecasting with nonstationary dynamic factor models},
+  author={Pe{\~n}a, Daniel and Poncela, Pilar},
+  journal={Journal of Econometrics},
+  volume={119},
+  number={2},
+  pages={291-321},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@misc{tbats,
+   author = {De Livera, Alysha M. and Hyndman, Rob J. and  and Snyder, Ralph D.},
+   title = {Forecasting time series with complex seasonal patterns using exponential smoothing},
+   year = {2010},
+   month = {October},
+   note = {\url{https://robjhyndman.com/papers/ComplexSeasonality.pdf}}
+}
+
+@Book{Snyder,
+author = { Snyder, Ralph D.},
+title = { Estimation of a dynamic linear model : another approach / R.D. Snyder },
+isbn = {0867464151},
+publisher = {Monash University, Department of Econometrics and Operations Research Clayton, Vic},
+year = { 1985 }
+}
+
+@article{Ord,
+author = {Ord, J. K. and Koehler, A. B. and Snyder,R. D.},
+title = {Estimation and Prediction for a Class of Dynamic Nonlinear Statistical Models},
+journal = {Journal of the American Statistical Association},
+volume = {92},
+number = {440},
+pages = {1621-1629},
+year = {1997}
+}
+
+@Article{BoxCox,
+author = {Sakia, Remi M.},
+title = {The {Box-Cox} Transformation Technique: A Review},
+journal = {Journal of the Royal Statistical Society. Series D (The Statistician)},
+year = {1992},
+volume = {41},
+number = {2},
+pages = {169-178}
+}
+
+@article{Taylor,
+          volume = {54},
+          number = {8},
+           month = {August},
+          author = {Taylor, James},
+           title = {Short-Term Electricity Demand Forecasting Using Double Seasonal Exponential Smoothing},
+         journal = {Journal of the Operational Research Society},
+           pages = {799-805},
+            year = {2003}
+}
+
+@ARTICLE{ARAlemania,
+title = {Forecasting electricity spot-prices using linear univariate time-series models},
+author = {Crespo Cuaresma, Jesus and Hlouskova, Jaroslava and Kossmeier, Stephan and Obersteiner, Michael},
+year = {2004},
+journal = {Applied Energy},
+volume = {77},
+number = {1},
+pages = {87-106}
+}
+
+@TECHREPORT{TSCalifornia,
+title = {Interval forecasting of spot electricity prices},
+author = {Misiorek, Adam and Weron, Rafał},
+year = {2006},
+institution = {Hugo Steinhaus Center, Wroclaw University of Technology},
+type = {{HSC} Research Reports}
+}
+
+@ARTICLE{Knittel,
+title = {An empirical examination of restructured electricity prices},
+author = {Knittel, Christopher and Roberts, Michael},
+year = {2005},
+journal = {Energy Economics},
+volume = {27},
+number = {5},
+pages = {791-817}
+}
+
+@ARTICLE{Sharma,
+title = {A hybrid intelligent model based on recurrent neural networks and excitable dynamics for price prediction in deregulated electricity market},
+journal = {Engineering Applications of Artificial Intelligence },
+volume = {26},
+number = {5-6},
+pages = {1562-1574},
+year = {2013},
+author = {V. Sharma and D. Srinivasan}
+}
+
+@ARTICLE{Kumarapa,
+title = {Day-Ahead Deregulated Electricity Market Price Forecasting Using Recurrent Neural Network},
+journal = {Engineering Applications of Artificial Intelligence },
+volume = {26},
+number = {7},
+pages = {866-872},
+year = {2013},
+author = {S. Anbazhagan and  N. Kumarappan}
+}
+
+@ARTICLE{PCA,
+title = {Day-ahead price forecasting of electricity markets based on local informative vector machine},
+journal = {IET Generation, Transmission and Distribution},
+volume = {7},
+pages = {1063-1071},
+year = {2013},
+month = {October},
+author = {Ehab Elsayed Elattar}
+}
+
+@ARTICLE{Nogales1,
+author = {Nogales, Francisco J. and Contreras, Javier and Conejo, Antonio J. and Espínola, Rosario},
+title = {Forecasting Next-Day Electricity Prices by
+Time Series Models},
+journal = {IEEE Transactions on Power Systems},
+year = {2002},
+volume = {17},
+number = {2},
+month = {May}
+}
+
+@article{Conejo2005,
+author = {Conejo, Antonio J. and Contreras, Javier and Espínola, Rosario and Plazas, Miguel A.},
+journal = {International Journal of Forecasting},
+number = {3},
+pages = {435-462},
+title = {Forecasting electricity prices for a day-ahead pool-based electric 	energy market},
+volume = {21},
+year = {2005}
+}
+
+@thesis{euphemia,
+    author  = {León-Salas Bujalance, Cristóbal },
+    title   = {El mercado eléctrico español Compra de energía eléctrica por parte de un consumidor directo},
+    year    = {2014},
+    institution = {Universidad de Sevilla}
+}
+
+@article{variables,
+    author  = {Rose, Kenneth},
+    title   = {The Impact of Fuel Costs on Electric Power Prices},
+    year    = {2007},
+	journal = {American Public Power Association },
+}
+
+@misc{intervalshyndman,
+   author = {Hyndman, Rob J.},
+   title = {The difference between prediction intervals and confidence intervals},
+   year = {2013},
+   howpublished = {\url{https://robjhyndman.com/hyndsight/intervals/}},
+   note = {Accessed: 2017-08-20}
+}
+
+@misc{ARMAX,
+      author = {Hyndman, Rob J.},
+      title = {The {ARIMAX} model muddle},
+      month = {October},
+      year = {2010},
+      howpublished={\url{https://robjhyndman.com/hyndsight/arimax/}},
+      note = {Accessed: 2017-08-18}
+}
+
+@book{arimahyndman,
+  title={Forecasting: principles and practice},
+  author={Hyndman, Rob J. and Athanasopoulos, G.},
+  url={\url{https://www.otexts.org/fpp}},
+  year={2014},
+  publisher={OTexts}
+}
+
+
+@TechReport{solar,
+author = {Schmalensee, Richard And Bulovic, Vladimir And Armstrong, Robert And Batlle, Carlos And Brown, Patrick And Deutch, John And Jacoby, Henry And Jaffe, Robert And Jean, Joel And Miller, Raanan And O'sullivan, Francis And Parsons, John And Pérez-Arriaga, José Ignacio And Seifkar, Navid And Stoner, Robert And Vergara, Claudio},
+title = {The Future of Solar Energy an interdisciplinary {MIT} study},
+institution = {Energy Initiative Massachusetts Institute of Technology},
+year = {2015},
+note = {\url{https://energy.mit.edu/wp-content/uploads/2015/05/MITEI-The-Future-of-Solar-Energy.pdf}}
+}
+
+
+@techreport{spot,
+  title={Spot, Bilateral and Futures Trading in Electricity Markets. Implications for Stability},
+  author={Termini, Valeria and Cavallo, Laura},
+  year={2007},
+  institution={Nota di Lavoro, Fondazione Eni Enrico Mattei}
+}
+
+@Article{term,
+    author  = {Singh, N. and Mohanty, S.},
+    title   = {A Review of Price Forecasting Problem and Techniques in Deregulated Electricity Markets},
+    year    = {2015},
+    journal = {Journal of Power and Energy Engineering},
+    pages = {1-19},
+    volumne = {3}
+}
+
+@article{lse,
+  Author = {Stigler, Stephen M.},
+  Title = {Gauss and the invention of least squares},
+  Journal = {The Annals of Statistics},
+  Volume = {9},
+  Year = {1981},
+  Pages = {465-474}
+}
+
+
+@Book{weron,
+    author    = {Weron, Rafał},
+    title     = {Modeling and Forecasting Electricity Loads and Prices: A Statistical Approach},
+    publisher = {Wiley, Chichester},
+    year = {2006}
+}
+
+@Article{svm,
+    author  = {Foruzan,Elham and Scoot, Stephen D. and Lin, Jeremy},
+    title   = {A Comparative Study of Different Machine Learning Methods for Electricity Prices Forecasting of an Electricity Market},
+    year    = {2015},
+    publisher = {North Amierican Power Symposium}
+}
+
+@Article{svmm,
+    author  = {Sansom, D. C., Downs, T., Saha, T. K.},
+    title   = {Support Vector Machine Based Electricity Price Forecasting For Electricity Markets utilising Projected Assessment of System Adequacy Data},
+    year    = {2003},
+    publisher={IPEC},
+    volume = {2},
+    pages = {783-788}
+}
+
+@misc{daily,
+	 note = {Accessed: 2017-08-19},
+	 title = {Our Electricity Markets},
+     howpublished={\url{http://www.omie.es/en/home/markets-and-products/electricity-market/our-electricity-markets}}
+}
+
+@misc{market,
+	note = {Accessed: 2017-08-19},
+	title = {About Our Market},
+    howpublished={\url{http://www.omie.es/en/home/markets-and-products/about-our-market}}
+}
+
+@Book{mit,
+    author    = {Murphy, Kevin P.},
+    title     = {Machine Learning: A Probabilistic Perspective},
+    publisher = {The MIT Press},
+    year = {2012}
+}
+
+@book{fourier,
+ author = {West, Mike and Harrison, Jeff},
+ title = {Bayesian Forecasting and Dynamic Models},
+ year = {1997},
+ publisher = {Springer-Verlag New York, Inc.}
+} 
+
+
+@book{ARMA,
+  title={Introduction to Time Series and Forecasting},
+  author={Brockwell, P.J. and Davis, R.A.},
+  year={2002},
+  publisher={Springer}
+}
+
+@article{aic,
+    author = {Akaike, Hirotugu},
+    institution = {Institute of Statistical Mathematics, Minato-ku, Tokyo, Japan},
+    journal = {IEEE Transactions on Automatic Control},
+    month = {December},
+    number = {6},
+    pages = {716-723},
+    publisher = {IEEE},
+    title = {{A new look at the statistical model identification}},
+    volume = {19},
+    year = {1974}
+}
+
+@article{aicc,
+author = {Hurvich, Clifford M. and Tsai, Chih-Ling},
+title = {Regression and time series model selection in small samples},
+journal = {Biometrika},
+volume = {76},
+number = {2},
+pages = {297-307},
+year = {1989}
+}
+
+@article {bic,
+author = {Liddle, Andrew R.},
+title = {Information criteria for astrophysical model selection},
+journal = {Monthly Notices of the Royal Astronomical Society: Letters},
+volume = {377},
+number = {1},
+publisher = {Blackwell Publishing Ltd},
+pages = {L74--L78},
+year = {2007}
+}
+
+@MastersThesis{adfm,
+author = {Bastos, Guadalupe},
+title = {Averaging in Dynamic Factor Models: An Application to Electricity Prices Forecasting},
+school = {Universidad Carlos III de Madrid},
+year = {2012}
+}
+
+@Article{Gjolberg,
+author = {Gjolberg, Ole and Brattested, Trine-Lise},
+title = {The biased short-term futures price at Nord Pool: can it really be a risk premium?},
+journal = {Journal of Energy Markets},
+year = {2011},
+volume = {4},
+number = {1},
+pages = {3-19},
+}
+
+@book{Benth,
+  title={Stochastic Modelling of Electricity and Related Markets},
+  author={Benth, F.E. and Benth, J.S. and Koekebakker, S.},
+  series={Advanced series on statistical science and applied probability},
+  year={2008},
+  publisher={World Scientific}
+}
+
+@Article{Bessec,
+  author={Marie, Bessec and Othman, Bouabdallah },
+  title={What Causes The Forecasting Failure of {Markov}-Switching Models? {A Monte Carlo} Study},
+  journal={Studies in Nonlinear Dynamics and Econometrics},
+  year=2005,
+  volume={9},
+  number={2},
+  pages={1-24},
+  month={June}
+}
+
+@article{Kosater,
+title = {Can {Markov} regime-switching models improve power-price forecasts? {Evidence from German} daily power prices},
+journal = {Applied Energy},
+author = {Kosater, Peter and Mosler, Karl},
+volume = {83},
+number = {9},
+pages = {943-958},
+year = {2006},
+}
+
+@Article{Koritarov,
+author = {Koritarov, Vladimir S.},
+title = {Real-world market representation with agents},
+journal = {IEEE Power and Energy Magazine},
+year = {2004},
+volume = {2},
+number = {4},
+pages = {39-46}
+}
+
+@article{Azadeh,
+author = {Azadeh, A. and Moghaddam M. and Mahdi, M. and Seyedmahmoudi, S. H.},
+title = {Optimum Long-Term Electricity Price Forecasting in Noisy and Complex Environments},
+journal = {Energy Sources, Part B: Economics, Planning, and Policy},
+volume = {8},
+number = {3},
+pages = {235-244},
+year = {2013}
+}
+
+@Article{martos,
+author  = {Garc\'ia-Martos, C. and Rodríguez, J. and S\'anchez, M.J.},
+journal={IET Generation, Transmission and Distribution}, 
+title={Forecasting electricity prices by extracting dynamic common factors: 		application to the {Iberian} Market}, 
+year={2012}, 
+volume={6}, 
+number={1}, 
+pages={11-20},
+month={January}
+}
+
+@Article{tramo,
+author = {Peng, Jyh-Ying and Aston, John A. D.},
+title = {The state space models toolbox for {MATLAB}},
+journal = {Journal of Statistical Software},
+year = {2011},
+volume = {41},
+number = {6},
+month = {May}
+}
+
+@Article{forecast,
+author = {Hyndman, Rob J. and Khandakar, Yeasmin  },
+title = {Automatic Time Series Forecasting: The forecast Package for {R}},
+journal = {Journal of Statistical Software},
+year = {2008},
+volume = {27},
+number = {3},
+month = {July}
+}
+
+@article{caret,
+   author = {Kuhn, Max},
+   title = {Building Predictive Models in {R} using the caret Package},
+   journal = {Journal of Statistical Software},
+   volume = {28},
+   number = {5},
+   year = {2008},
+   pages = {1-26},
+}
+
+@article{guerrero,
+  title={Time-series analysis supported by power transformations},
+  author={Guerrero, Victor M},
+  journal={Journal of Forecasting},
+  volume={12},
+  number={1},
+  pages={37-48},
+  year={1993},
+  publisher={Wiley Online Library}
+}
+

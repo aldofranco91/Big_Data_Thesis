@@ -1,0 +1,15 @@
+\select@language {english}
+\contentsline {figure}{\numberline {1}{\ignorespaces Illustration of the rolling forecasting origin procedure.}}{22}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Real and predicted prices when a low MAE is obtained using SVM with linear kernel for the next 24 hours.}}{29}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Real and predicted prices when a high MAE is obtained using SVM with linear kernel for the next 24 hours.}}{29}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Daily MAE for 1-24 Hours from January 1st, 2016 to June 30th, 2017.}}{30}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Real and predicted prices when a low MAE is obtained using LR+DFM with r=3 for the next 144 hours.}}{32}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Real and predicted prices when a high MAE is obtained using LR+DFM with r=3 for the next 144 hours.}}{33}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Daily MAE for 1-144 Hours from January 1st, 2016 to June 30th, 2017.}}{33}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Real and predicted prices when a low MAE is obtained using $TBATS_7$ for the next 30 days.}}{35}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Real and predicted prices when a high MAE is obtained using $TBATS_7$ for the next 30 days.}}{35}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Daily MAE for 1-30 Days from January 1st, 2016 to June 30th, 2017.}}{36}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Real and predicted prices when a low MAE is obtained using $ARIMA$ for the next 12 months.}}{37}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Real and predicted prices when a high MAE is obtained using $ARIMA$ for the next 12 months.}}{38}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Monthly MAE for 1-12 Months from January, 2010 to June, 2017.}}{38}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Capture of the app developed.}}{40}{figure.14}

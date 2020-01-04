@@ -1,0 +1,298 @@
+\begin{thebibliography}{10}
+
+\bibitem{market}
+About our market.
+\newblock
+  \url{http://www.omie.es/en/home/markets-and-products/about-our-market}.
+\newblock Accessed: 2017-08-19.
+
+\bibitem{aic}
+{\sc Akaike, H.}
+\newblock {A new look at the statistical model identification}.
+\newblock {\em IEEE Transactions on Automatic Control 19}, 6 (December 1974),
+  716--723.
+
+\bibitem{Andres}
+{\sc Alonso, A.~M., Rodríguez, J., García-Martos, C., and Sánchez, M.~J.}
+\newblock Seasonal dynamic factor analysis and bootstrap inference: Application
+  to electricity market forecasting.
+\newblock {\em Technometrics 53}, 2 (2011), 137--151.
+
+\bibitem{Kumarapa}
+{\sc Anbazhagan, S., and Kumarappan, N.}
+\newblock Day-ahead deregulated electricity market price forecasting using
+  recurrent neural network.
+\newblock {\em Engineering Applications of Artificial Intelligence 26}, 7
+  (2013), 866--872.
+
+\bibitem{Azadeh}
+{\sc Azadeh, A., M., M., Mahdi, M., and Seyedmahmoudi, S.~H.}
+\newblock Optimum long-term electricity price forecasting in noisy and complex
+  environments.
+\newblock {\em Energy Sources, Part B: Economics, Planning, and Policy 8}, 3
+  (2013), 235--244.
+
+\bibitem{Benth}
+{\sc Benth, F., Benth, J., and Koekebakker, S.}
+\newblock {\em Stochastic Modelling of Electricity and Related Markets}.
+\newblock Advanced series on statistical science and applied probability. World
+  Scientific, 2008.
+
+\bibitem{ARMA}
+{\sc Brockwell, P., and Davis, R.}
+\newblock {\em Introduction to Time Series and Forecasting}.
+\newblock Springer, 2002.
+
+\bibitem{Conejo2005}
+{\sc Conejo, A.~J., Contreras, J., Espínola, R., and Plazas, M.~A.}
+\newblock Forecasting electricity prices for a day-ahead pool-based electric
+  energy market.
+\newblock {\em International Journal of Forecasting 21}, 3 (2005), 435--462.
+
+\bibitem{ARAlemania}
+{\sc Crespo~Cuaresma, J., Hlouskova, J., Kossmeier, S., and Obersteiner, M.}
+\newblock Forecasting electricity spot-prices using linear univariate
+  time-series models.
+\newblock {\em Applied Energy 77}, 1 (2004), 87--106.
+
+\bibitem{tbats}
+{\sc De~Livera, A.~M., Hyndman, R.~J., , and Snyder, R.~D.}
+\newblock Forecasting time series with complex seasonal patterns using
+  exponential smoothing, October 2010.
+\newblock \url{https://robjhyndman.com/papers/ComplexSeasonality.pdf}.
+
+\bibitem{PCA}
+{\sc Elattar, E.~E.}
+\newblock Day-ahead price forecasting of electricity markets based on local
+  informative vector machine.
+\newblock {\em IET Generation, Transmission and Distribution 7\/} (October
+  2013), 1063--1071.
+
+\bibitem{martos}
+{\sc Garc\'ia-Martos, C., Rodríguez, J., and S\'anchez, M.}
+\newblock Forecasting electricity prices by extracting dynamic common factors:
+  application to the {Iberian} market.
+\newblock {\em IET Generation, Transmission and Distribution 6}, 1 (January
+  2012), 11--20.
+
+\bibitem{A}
+{\sc Geweke, J.}
+\newblock {\em The Dynamic Factor Analysis of Economic Time Series Models}.
+\newblock Social Systems Research Institute, University of Wisconsin-Madison,
+  1978.
+
+\bibitem{Gjolberg}
+{\sc Gjolberg, O., and Brattested, T.-L.}
+\newblock The biased short-term futures price at nord pool: can it really be a
+  risk premium?
+\newblock {\em Journal of Energy Markets 4}, 1 (2011), 3--19.
+
+\bibitem{B}
+{\sc Gómez, V., and Maravall, A.}
+\newblock Programs tramo and seats, instruction for user (beta version:
+  september 1996).
+\newblock Working papers, Banco de España, 1996.
+
+\bibitem{guerrero}
+{\sc Guerrero, V.~M.}
+\newblock Time-series analysis supported by power transformations.
+\newblock {\em Journal of Forecasting 12}, 1 (1993), 37--48.
+
+\bibitem{aicc}
+{\sc Hurvich, C.~M., and Tsai, C.-L.}
+\newblock Regression and time series model selection in small samples.
+\newblock {\em Biometrika 76}, 2 (1989), 297--307.
+
+\bibitem{OTexts}
+{\sc Hyndman, R., and Athanasopoulos, G.}
+\newblock {\em Forecasting: principles and practice:}.
+\newblock OTexts, 2014.
+
+\bibitem{intervalshyndman}
+{\sc Hyndman, R.~J.}
+\newblock The difference between prediction intervals and confidence intervals.
+\newblock \url{https://robjhyndman.com/hyndsight/intervals/}, 2013.
+\newblock Accessed: 2017-08-20.
+
+\bibitem{arimahyndman}
+{\sc Hyndman, R.~J., and Athanasopoulos, G.}
+\newblock {\em Forecasting: principles and practice}.
+\newblock OTexts, 2014.
+
+\bibitem{forecast}
+{\sc Hyndman, R.~J., and Khandakar, Y.}
+\newblock Automatic time series forecasting: The forecast package for {R}.
+\newblock {\em Journal of Statistical Software 27}, 3 (July 2008).
+
+\bibitem{Error}
+{\sc Hyndman, R.~J., and Koehler, A.~B.}
+\newblock Another look at measures of forecast accuracy.
+\newblock {\em International Journal of Forecasting 22}, 4 (2006), 679--688.
+
+\bibitem{Knittel}
+{\sc Knittel, C., and Roberts, M.}
+\newblock An empirical examination of restructured electricity prices.
+\newblock {\em Energy Economics 27}, 5 (2005), 791--817.
+
+\bibitem{Koritarov}
+{\sc Koritarov, V.~S.}
+\newblock Real-world market representation with agents.
+\newblock {\em IEEE Power and Energy Magazine 2}, 4 (2004), 39--46.
+
+\bibitem{Kosater}
+{\sc Kosater, P., and Mosler, K.}
+\newblock Can {Markov} regime-switching models improve power-price forecasts?
+  {Evidence from German} daily power prices.
+\newblock {\em Applied Energy 83}, 9 (2006), 943--958.
+
+\bibitem{caret}
+{\sc Kuhn, M.}
+\newblock Building predictive models in {R} using the caret package.
+\newblock {\em Journal of Statistical Software 28}, 5 (2008), 1--26.
+
+\bibitem{D}
+{\sc Lee, R.~D., and Carter, L.~R.}
+\newblock Modeling and forecasting u. s. mortality.
+\newblock {\em Journal of the American Statistical Association 87}, 419 (1992),
+  659--671.
+
+\bibitem{euphemia}
+{\sc León-Salas~Bujalance, C.}
+\newblock El mercado eléctrico español compra de energía eléctrica por
+  parte de un consumidor directo, 2014.
+
+\bibitem{bic}
+{\sc Liddle, A.~R.}
+\newblock Information criteria for astrophysical model selection.
+\newblock {\em Monthly Notices of the Royal Astronomical Society: Letters 377},
+  1 (2007), L74--L78.
+
+\bibitem{Bessec}
+{\sc Marie, B., and Othman, B.}
+\newblock What causes the forecasting failure of {Markov}-switching models? {A
+  Monte Carlo} study.
+\newblock {\em Studies in Nonlinear Dynamics and Econometrics 9}, 2 (June
+  2005), 1--24.
+
+\bibitem{TSCalifornia}
+{\sc Misiorek, A., and Weron, R.}
+\newblock Interval forecasting of spot electricity prices.
+\newblock {HSC} research reports, Hugo Steinhaus Center, Wroclaw University of
+  Technology, 2006.
+
+\bibitem{mit}
+{\sc Murphy, K.~P.}
+\newblock {\em Machine Learning: A Probabilistic Perspective}.
+\newblock The MIT Press, 2012.
+
+\bibitem{Nogales1}
+{\sc Nogales, F.~J., Contreras, J., Conejo, A.~J., and Espínola, R.}
+\newblock Forecasting next-day electricity prices by time series models.
+\newblock {\em IEEE Transactions on Power Systems 17}, 2 (May 2002).
+
+\bibitem{Ord}
+{\sc Ord, J.~K., Koehler, A.~B., and Snyder, R.~D.}
+\newblock Estimation and prediction for a class of dynamic nonlinear
+  statistical models.
+\newblock {\em Journal of the American Statistical Association 92}, 440 (1997),
+  1621--1629.
+
+\bibitem{E}
+{\sc Pena, D., and Box, G.~E.}
+\newblock Identifying a simplifying structure in time series.
+\newblock {\em Journal of the American Statistical Association 82}, 399 (1987),
+  836--843.
+
+\bibitem{F}
+{\sc Pe{\~n}a, D., and Poncela, P.}
+\newblock Forecasting with nonstationary dynamic factor models.
+\newblock {\em Journal of Econometrics 119}, 2 (2004), 291--321.
+
+\bibitem{variables}
+{\sc Rose, K.}
+\newblock The impact of fuel costs on electric power prices.
+\newblock {\em American Public Power Association\/} (2007).
+
+\bibitem{BoxCox}
+{\sc Sakia, R.~M.}
+\newblock The {Box-Cox} transformation technique: A review.
+\newblock {\em Journal of the Royal Statistical Society. Series D (The
+  Statistician) 41}, 2 (1992), 169--178.
+
+\bibitem{solar}
+{\sc Schmalensee, R., Bulovic, V., Armstrong, R., Batlle, C., Brown, P.,
+  Deutch, J., Jacoby, H., Jaffe, R., Jean, J., Miller, R., O'sullivan, F.,
+  Parsons, J., Pérez-Arriaga, J.~I., Seifkar, N., Stoner, R., and Vergara, C.}
+\newblock The future of solar energy an interdisciplinary {MIT} study.
+\newblock Tech. rep., Energy Initiative Massachusetts Institute of Technology,
+  2015.
+\newblock
+  \url{https://energy.mit.edu/wp-content/uploads/2015/05/MITEI-The-Future-of-Solar-Energy.pdf}.
+
+\bibitem{Sharma}
+{\sc Sharma, V., and Srinivasan, D.}
+\newblock A hybrid intelligent model based on recurrent neural networks and
+  excitable dynamics for price prediction in deregulated electricity market.
+\newblock {\em Engineering Applications of Artificial Intelligence 26}, 5-6
+  (2013), 1562--1574.
+
+\bibitem{term}
+{\sc Singh, N., and Mohanty, S.}
+\newblock A review of price forecasting problem and techniques in deregulated
+  electricity markets.
+\newblock {\em Journal of Power and Energy Engineering\/} (2015), 1--19.
+
+\bibitem{Snyder}
+{\sc Snyder, R.~D.}
+\newblock {\em Estimation of a dynamic linear model : another approach / R.D.
+  Snyder}.
+\newblock Monash University, Department of Econometrics and Operations Research
+  Clayton, Vic, 1985.
+
+\bibitem{lse}
+{\sc Stigler, S.~M.}
+\newblock Gauss and the invention of least squares.
+\newblock {\em The Annals of Statistics 9\/} (1981), 465--474.
+
+\bibitem{Taylor}
+{\sc Taylor, J.}
+\newblock Short-term electricity demand forecasting using double seasonal
+  exponential smoothing.
+\newblock {\em Journal of the Operational Research Society 54}, 8 (August
+  2003), 799--805.
+
+\bibitem{spot}
+{\sc Termini, V., and Cavallo, L.}
+\newblock Spot, bilateral and futures trading in electricity markets.
+  implications for stability.
+\newblock Tech. rep., Nota di Lavoro, Fondazione Eni Enrico Mattei, 2007.
+
+\bibitem{Vapnik}
+{\sc Vapnik, V.~N.}
+\newblock {\em The Nature of Statistical Learning Theory}.
+\newblock Springer-Verlag New York, Inc., 1995.
+
+\bibitem{Granger}
+{\sc W.~J.~Granger, C.}
+\newblock {\em Forecasting in Business and Economics}.
+\newblock Economic Theory, Econometrics and Mathematical Economics Series.
+  Academic Press, 1989.
+
+\bibitem{weron}
+{\sc Weron, R.}
+\newblock {\em Modeling and Forecasting Electricity Loads and Prices: A
+  Statistical Approach}.
+\newblock Wiley, Chichester, 2006.
+
+\bibitem{review}
+{\sc Weron, R.}
+\newblock Electricity price forecasting: A review of the state-of-the-art with
+  a look into the future.
+\newblock {\em International Journal of Forecasting 30\/} (2014), 1030--1081.
+
+\bibitem{fourier}
+{\sc West, M., and Harrison, J.}
+\newblock {\em Bayesian Forecasting and Dynamic Models}.
+\newblock Springer-Verlag New York, Inc., 1997.
+
+\end{thebibliography}
